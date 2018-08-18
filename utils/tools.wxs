@@ -1,0 +1,12 @@
+var formatDate = function (inputTime){
+  var date =  getDate(inputTime*1000);
+  var h = date.getHours();
+  var minute = date.getMinutes();
+  if(minute-9<=0){
+    minute = "0"+minute;
+  }
+  return h + ':' + minute;
+}
+module.exports = {
+  formatDate: formatDate
+};

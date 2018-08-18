@@ -1,0 +1,6 @@
+<view class="container">
+   <image src="../../image/aboutme.jpg" ></image>
+    <view class="website">
+        
+    </view>
+</view>

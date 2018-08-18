@@ -1,0 +1,115 @@
+/**app.wxss**/
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+} 
+
+page{
+  height: 100%;
+}
+
+.page-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 30px;
+}
+
+
+.loading-view{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.item-view{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #E4F0FB;
+    margin-left: 22px;
+    padding-bottom: 3px;
+    margin-top: 11px;
+    position: relative;
+}
+
+.item-view .title{
+  font-weight: 500;
+  font-size: 14px;
+}
+.item-view .content{
+    font-size: 13px;
+    overflow: hidden;
+    line-height: 20px;
+}
+.item-view .hide{
+    height: 60px;
+    text-overflow: ellipsis;
+}
+.item-view .show{
+    line-height: 200px;
+    height: 600px;
+    text-overflow: ellipsis;
+}
+
+.item-view .rank{
+  color: red;
+}
+
+.item-view .date{
+    position: absolute;
+    top: -8px;
+    left: -18px;
+    width: 42px;
+    text-align: center;
+    font-size: 10px;
+    height: 16px;
+    line-height: 16px;
+    color: #276294;
+    background:#E7ECF0;
+    border-radius:8px;
+}
+
+.item-view image{
+    width: 100%;
+    height: 400rpx;
+    margin-top: 10px;
+}
+
+.bull {
+  font-size: 12px;
+  color: #969EAC;
+  background: url(http://www.bishijie.com/static/home/image/seemore_off.png) no-repeat;
+  background-position: 0px 2px;
+  background-size: 12px;
+  padding-left: 15px;
+  margin-right: 20px;
+}
+
+.bad {
+  font-size: 12px;
+  color: #969EAC;
+  background: url(http://www.bishijie.com/static/home/image/bearish_off.png) no-repeat; 
+  background-position: 0px 2px;
+  background-size: 12px;
+  padding-left: 15px;
+}
+
+.icon {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-size: 20px;
+}
+
+.icon-bull {
+   background: url(http://www.bishijie.com/static/home/image/seemore_off.png) no-repeat center;
+}
+.icon-bad {
+    background: url(http://www.bishijie.com/static/home/image/bearish_off.png) no-repeat center;  
+}
+

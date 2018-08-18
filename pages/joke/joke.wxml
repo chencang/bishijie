@@ -1,0 +1,16 @@
+<import src="../common/common.wxml"/>
+<scroll-view scroll-y="true" class="page-body" bindscrolltolower="loadMore" lower-threshold="100">
+    <view wx:for="{{kxData}}" wx:for-index="idx" >
+      <view class="today">
+        <text>{{item.today}}
+        </text>
+      </view>
+      <view wx:for="{{item.buttom}}">
+        <template  is="jokeItem" data="{{...item, index,dataIndex:idx}}" />
+      </view>
+    </view>
+    <template is="loadindFooter" data="{{hideFooter}}"/>
+</scroll-view>
+<loading hidden="{{loadingHide}}">
+    加载中...
+</loading>

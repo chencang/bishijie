@@ -1,0 +1,11 @@
+.today {
+  background-color:#E8EDF3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.today text{
+   font-size:12px;
+   padding-left:10px;
+}
